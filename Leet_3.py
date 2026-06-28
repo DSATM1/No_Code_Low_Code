@@ -44,3 +44,22 @@ O(n²) to generate substrings
 O(n) to check duplicates
 
 Not efficient for large inputs."""
+
+
+"""Optimal Approach – Sliding Window (Two Pointers)
+
+This is the approach expected in interviews.
+
+Idea
+
+Maintain a window that always contains unique characters.
+
+Use:
+
+left → starting index
+right → ending index
+Dictionary to remember the last index of each character.
+
+When a duplicate is found:
+
+Move left to one position after the previous occurrence."""
