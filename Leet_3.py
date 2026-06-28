@@ -63,3 +63,43 @@ Dictionary to remember the last index of each character.
 When a duplicate is found:
 
 Move left to one position after the previous occurrence."""
+
+
+"""Visualization
+
+Suppose
+
+s = "abcabcbb"
+
+Start
+
+Window = "a"
+Length = 1
+
+Expand
+
+"ab"
+Length = 2
+
+Expand
+
+"abc"
+Length = 3
+
+Next character is another 'a'
+
+Current window
+
+abc
+^
+duplicate
+
+Move left after previous 'a'
+
+Window becomes
+
+bca
+
+Continue until the end.
+
+Maximum length remains 3."""
