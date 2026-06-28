@@ -103,3 +103,16 @@ bca
 Continue until the end.
 
 Maximum length remains 3."""
+
+"""
+Algorithm
+Create an empty dictionary.
+Initialize:
+left = 0
+max_len = 0
+Traverse using right.
+If character already exists inside current window:
+Move left.
+Update character's latest index.
+Calculate current window size.
+Update maximum."""
