@@ -246,3 +246,17 @@ Answer : 3"""
 Complexity	Value
 Time	O(n)
 Space	O(min(n, m)), where m is the size of the character set"""
+
+"""Pattern Used
+
+This problem is a classic example of the Sliding Window (Two Pointers) technique.
+
+You'll use the same pattern in many interview questions, such as:
+
+Longest substring with at most K distinct characters
+Minimum window substring
+Permutation in string
+Find all anagrams in a string
+Longest repeating character replacement
+
+Mastering this sliding window approach will help you solve a large class of substring and subarray problems efficiently."""
