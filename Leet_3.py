@@ -16,3 +16,11 @@ Output: 3
 
 Explanation:
 The longest substring is "abc", so the answer is 3."""
+
+"""Example 2
+Input: s = "bbbbb"
+
+Output: 1
+
+Explanation:
+The longest substring is "b"."""
