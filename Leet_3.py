@@ -141,3 +141,86 @@ class Solution:
             max_len = max(max_len, current_length)
 
         return max_len"""
+
+
+
+"""Line-by-Line Explanation
+Dictionary
+char_index = {}
+
+Stores
+
+character : last index
+
+Example
+
+{
+'a':0,
+'b':1,
+'c':2
+}
+Left Pointer
+left = 0
+
+Beginning of current window.
+
+Maximum Length
+max_len = 0
+
+Stores the final answer.
+
+Loop
+for right in range(len(s)):
+
+Move the right pointer one character at a time.
+
+Duplicate Check
+if s[right] in char_index and char_index[s[right]] >= left:
+
+Suppose
+
+abcdea
+     ^
+
+The second 'a' is inside the current window.
+
+Move left.
+
+Move Left
+left = char_index[s[right]] + 1
+
+Example
+
+a b c d a
+0 1 2 3 4
+
+Previous 'a' = index 0
+
+New left
+
+1
+
+Window becomes
+
+bcda
+Update Latest Position
+char_index[s[right]] = right
+
+Always remember the latest occurrence.
+
+Current Window Size
+current_length = right - left + 1
+
+Example
+
+left = 2
+right = 5
+
+Length = 5 - 2 + 1 = 4
+Update Answer
+max_len = max(max_len, current_length)
+
+Keep the largest window.
+
+Return
+return max_len"""
