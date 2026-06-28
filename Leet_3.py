@@ -224,3 +224,19 @@ Keep the largest window.
 
 Return
 return max_len"""
+
+"""Dry Run
+
+Input : s = "abcabcbb"
+
+Right	Character	Left	Window	Max
+0	    a	        0	    a	    1   
+1	    b	        0	    ab	    2
+2	    c	        0	    abc 	3
+3	    a	        1	    bca 	3
+4	    b	        2	    cab 	3
+5	    c	        3	    abc 	3
+6	    b	        5	    cb	    3
+7	    b	        7	    b	    3   
+
+Answer : 3"""
