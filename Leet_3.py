@@ -24,3 +24,11 @@ Output: 1
 
 Explanation:
 The longest substring is "b"."""
+
+"""Example 3
+Input: s = "pwwkew"
+
+Output: 3
+
+Explanation:
+The longest substring is "wke"."""
