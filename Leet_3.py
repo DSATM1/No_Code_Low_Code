@@ -32,3 +32,15 @@ Output: 3
 
 Explanation:
 The longest substring is "wke"."""
+
+"""Brute Force Approach
+Idea
+Generate every possible substring.
+Check if all characters are unique.
+Keep track of the maximum length.
+Time Complexity
+O(n³)
+O(n²) to generate substrings
+O(n) to check duplicates
+
+Not efficient for large inputs."""
