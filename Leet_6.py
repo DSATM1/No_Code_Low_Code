@@ -101,3 +101,30 @@ Algorithm
 5. Reverse direction and move upward.
 6. Append each character to the current row.
 7. Join all rows.
+
+Python Code
+
+class Solution:
+    def convert(self, s: str, numRows: int) -> str:
+
+        if numRows == 1 or numRows >= len(s):
+            return s
+
+        rows = [""] * numRows
+
+        current_row = 0
+        direction = 1
+
+        for char in s:
+
+            rows[current_row] += char
+
+            if current_row == 0:
+                direction = 1
+
+            elif current_row == numRows - 1:
+                direction = -1
+
+            current_row += direction
+
+        return "".join(rows)
