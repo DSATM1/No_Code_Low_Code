@@ -57,3 +57,38 @@ Create a list for each row.
 Move down through the rows, then up diagonally, repeating until all characters are placed.
 
 Finally, join all rows together.
+
+Visualization
+
+Input:
+
+s = "PAYPALISHIRING"
+numRows = 3
+
+Start:
+
+Row 0:
+Row 1:
+Row 2:
+
+Add characters one by one:
+
+Row 0: P
+Row 1: A
+Row 2: Y
+
+Move upward:
+
+Row 0: PA
+Row 1: AP
+Row 2: Y
+
+Continue:
+
+Row 0: PAHN
+Row 1: APLSIIG
+Row 2: YIR
+
+Join all rows:
+
+PAHNAPLSIIGYIR
