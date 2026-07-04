@@ -186,3 +186,29 @@ Step 8: Return the Result
 return "".join(rows)
 
 Combine all rows into the final string.
+
+Dry Run
+
+Input:
+
+s = "PAYPALISHIRING"
+numRows = 3
+Character	Row	    Rows After Insertion
+P	        0	    P
+A	        1	    P / A
+Y	        2	    P / A / Y
+P	        1	    P / AP / Y
+A	        0	    PA / AP / Y
+L	        1	    PA / APL / Y
+I	        2	    PA / APL / YI
+S	        1	    PA / APLS / YI
+H	        0	    PAH / APLS / YI
+I	        1	    PAH / APLSI / YI
+R	        2	    PAH / APLSI / YIR
+I	        1	    PAH / APLSII / YIR
+N	        0	    PAHN / APLSII / YIR
+G	        1	    PAHN / APLSIIG / YIR
+
+Final answer:
+
+PAHNAPLSIIGYIR
