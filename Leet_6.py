@@ -48,3 +48,12 @@ numRows = 1
 
 Output:
 "A"
+
+Approach 1: Simulate the Zigzag (Optimal)
+Idea
+
+Create a list for each row.
+
+Move down through the rows, then up diagonally, repeating until all characters are placed.
+
+Finally, join all rows together.
