@@ -219,3 +219,14 @@ Time	O(n)
 Space	O(n)
 Each character is processed exactly once.
 The extra space is used to store the rows.
+
+
+Pattern Used
+
+This problem demonstrates a Simulation pattern:
+
+Simulate moving through rows in a zigzag.
+Use a direction flag (down/up) to control movement.
+Build the result incrementally.
+
+This type of row-by-row simulation is a common interview pattern for string manipulation problems.
