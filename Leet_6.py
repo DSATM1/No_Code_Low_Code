@@ -18,3 +18,11 @@ Reading row by row gives:
 PAHNAPLSIIGYIR
 
 Write a function that converts a string into this zigzag format.
+
+Example 1
+Input:
+s = "PAYPALISHIRING"
+numRows = 3
+
+Output:
+"PAHNAPLSIIGYIR"
