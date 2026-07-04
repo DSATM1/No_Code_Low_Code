@@ -128,3 +128,61 @@ class Solution:
             current_row += direction
 
         return "".join(rows)
+
+
+
+Line-by-Line Explanation
+Step 1: Handle Edge Cases
+if numRows == 1 or numRows >= len(s):
+    return s
+If there's only one row, no zigzag is needed.
+If the number of rows is greater than or equal to the string length, each character stays in its own row.
+Step 2: Create Rows
+rows = [""] * numRows
+
+For numRows = 3:
+
+[
+ "",
+ "",
+ ""
+]
+
+Each element stores characters for one row.
+
+Step 3: Initialize Variables
+current_row = 0
+direction = 1
+current_row keeps track of the current row.
+direction = 1 means moving down.
+direction = -1 means moving up.
+Step 4: Traverse the String
+for char in s:
+
+Process one character at a time.
+
+Step 5: Add Character to Current Row
+rows[current_row] += char
+
+Example:
+
+Row 0: P
+Row 1: A
+Row 2: Y
+Step 6: Change Direction
+if current_row == 0:
+    direction = 1
+
+elif current_row == numRows - 1:
+    direction = -1
+At the top row, start moving down.
+At the bottom row, start moving up.
+Step 7: Move to Next Row
+current_row += direction
+
+Update the row index based on the current direction.
+
+Step 8: Return the Result
+return "".join(rows)
+
+Combine all rows into the final string.
