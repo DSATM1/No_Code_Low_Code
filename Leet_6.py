@@ -212,3 +212,10 @@ G	        1	    PAHN / APLSIIG / YIR
 Final answer:
 
 PAHNAPLSIIGYIR
+
+Complexity Analysis
+Complexity	Value
+Time	O(n)
+Space	O(n)
+Each character is processed exactly once.
+The extra space is used to store the rows.
