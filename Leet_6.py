@@ -92,3 +92,12 @@ Row 2: YIR
 Join all rows:
 
 PAHNAPLSIIGYIR
+
+Algorithm
+1. If numRows == 1 or numRows >= len(s), return s.
+2. Create a list of empty strings (one for each row).
+3. Start at row 0.
+4. Move downward until the last row.
+5. Reverse direction and move upward.
+6. Append each character to the current row.
+7. Join all rows.
