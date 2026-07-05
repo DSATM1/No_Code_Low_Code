@@ -209,3 +209,33 @@ reverse = 98
 digit = 7
 
 new reverse = 987
+
+Remove Last Digit
+x //= 10
+
+Example:
+
+987
+
+↓
+
+98
+Restore Sign
+reverse *= sign
+
+Example:
+
+321
+
+↓
+
+-321
+Overflow Check
+if reverse < -2**31 or reverse > 2**31 - 1:
+    return 0
+
+The valid 32-bit signed integer range is:
+
+-2147483648 to 2147483647
+
+If the reversed number falls outside this range, return 0.
