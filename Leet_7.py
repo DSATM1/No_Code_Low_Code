@@ -106,3 +106,10 @@ digit = 3
 reverse = 3
 
 remaining = 12
+
+Step 2
+digit = 2
+
+reverse = 32
+
+remaining = 1
