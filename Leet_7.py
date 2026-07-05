@@ -239,3 +239,45 @@ The valid 32-bit signed integer range is:
 -2147483648 to 2147483647
 
 If the reversed number falls outside this range, return 0.
+
+Dry Run
+
+Input:
+
+x = -120
+x	    digit	  reverse
+120	  0	      0
+12	  2	      2
+1	    1	      21
+0	    -	      21
+
+Restore sign:
+
+-21
+
+Answer:
+
+-21
+Complexity Analysis
+Approach	Time	Space
+String Reversal	O(d)	O(d)
+Mathematical Reversal	O(d)	O(1)
+
+Here, d is the number of digits in the integer.
+
+Pattern Used
+
+This problem uses the Mathematical Digit Manipulation pattern:
+
+Extract digits using % 10.
+Remove digits using // 10.
+Build a new number incrementally.
+Check for integer overflow.
+
+This digit-by-digit technique is also useful in problems like:
+
+Palindrome Number
+Plus One
+Add Digits
+Happy Number
+Sum of Digits
