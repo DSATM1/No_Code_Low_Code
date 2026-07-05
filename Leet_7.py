@@ -113,3 +113,14 @@ digit = 2
 reverse = 32
 
 remaining = 1
+
+Step 3
+digit = 1
+
+reverse = 321
+
+remaining = 0
+
+Answer:
+
+321
