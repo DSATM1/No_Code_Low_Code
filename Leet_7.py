@@ -47,3 +47,12 @@ Explanation:
 9646324351
 
 This exceeds the 32-bit signed integer limit, so return 0.
+
+Approach 1: String Reversal (Easy to Understand)
+Idea
+1. Convert the integer to a string.
+2. Reverse the string.
+3. Convert it back to an integer.
+4. Restore the sign.
+5. Check for 32-bit overflow.
+
