@@ -86,3 +86,11 @@ O(n)
 Approach 2: Mathematical Reversal (Interview Preferred)
 
 Instead of converting to a string, reverse the number digit by digit.
+
+Idea
+
+Take the last digit using % 10.
+
+Remove the last digit using // 10.
+
+Build the reversed number.
