@@ -124,3 +124,14 @@ remaining = 0
 Answer:
 
 321
+
+Algorithm
+Save the sign.
+Work with the absolute value.
+While number > 0:
+Extract last digit.
+Append digit to reverse.
+Remove last digit.
+Restore sign.
+Check overflow.
+Return answer.
