@@ -178,3 +178,23 @@ Example:
 becomes
 
 456
+
+Initialize Reverse
+reverse = 0
+
+Initially:
+
+reverse = 0
+Loop Until Number Ends
+while x > 0:
+
+Continue until all digits are processed.
+
+Get Last Digit
+digit = x % 10
+
+Example:
+
+x = 987
+
+digit = 7
