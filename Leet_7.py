@@ -13,3 +13,10 @@ If reversing x causes the value to go outside the signed 32-bit integer range:
 return 0.
 
 Note: You cannot use 64-bit integers to store the reversed number.
+
+Example 1
+Input:
+x = 123
+
+Output:
+321
