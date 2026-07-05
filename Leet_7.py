@@ -77,3 +77,9 @@ class Solution:
 
 Time Complexity
 O(n)
+
+where n is the number of digits.
+
+Space:
+
+O(n)
