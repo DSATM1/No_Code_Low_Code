@@ -159,3 +159,14 @@ class Solution:
             return 0
 
         return reverse
+Line-by-Line Explanation
+Save the Sign
+sign = -1 if x < 0 else 1
+
+Examples:
+
+123 → sign = 1
+
+-123 → sign = -1
+Work with Positive Number
+x = abs(x)
