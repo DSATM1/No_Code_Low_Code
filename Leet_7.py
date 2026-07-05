@@ -81,5 +81,8 @@ O(n)
 where n is the number of digits.
 
 Space:
-
 O(n)
+
+Approach 2: Mathematical Reversal (Interview Preferred)
+
+Instead of converting to a string, reverse the number digit by digit.
