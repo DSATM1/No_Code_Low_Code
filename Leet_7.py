@@ -34,3 +34,16 @@ x = 120
 
 Output:
 21
+
+Example 4
+Input:
+x = 1534236469
+
+Output:
+0
+
+Explanation:
+
+9646324351
+
+This exceeds the 32-bit signed integer limit, so return 0.
