@@ -94,3 +94,15 @@ Take the last digit using % 10.
 Remove the last digit using // 10.
 
 Build the reversed number.
+
+Example
+
+Input:
+
+123
+Step 1
+digit = 3
+
+reverse = 3
+
+remaining = 12
