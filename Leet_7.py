@@ -198,3 +198,14 @@ Example:
 x = 987
 
 digit = 7
+
+Build Reversed Number
+reverse = reverse * 10 + digit
+
+Example:
+
+reverse = 98
+
+digit = 7
+
+new reverse = 987
