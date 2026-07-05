@@ -170,3 +170,11 @@ Examples:
 -123 → sign = -1
 Work with Positive Number
 x = abs(x)
+
+Example:
+
+-456
+
+becomes
+
+456
