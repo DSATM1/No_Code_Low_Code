@@ -73,3 +73,7 @@ class Solution:
             return 0
 
         return reversed_num
+
+
+Time Complexity
+O(n)
