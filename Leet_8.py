@@ -11,3 +11,7 @@ Conversion: Read the characters until the next non-digit character or the end of
 Convert these digits into an integer.
 Clamping: If the integer is out of the 32-bit signed integer range $[-2^{31}, 2^{31} - 1]$, 
 clamp it so it remains within the range.
+
+Approach
+The best way to solve this is through a sequential string parsing approach 
+(often called a Deterministic Finite Automaton or simple pointer iteration).
