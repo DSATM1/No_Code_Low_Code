@@ -88,3 +88,4 @@ We are only using a few variables (sign, index, result, and bounds) which requir
 Common Edge Cases Handled:
 
 "   -42": Successfully strips spaces and catches the negative sign.
+"4193 with words": Stops reading at the first space/letter and correctly returns 4193.
