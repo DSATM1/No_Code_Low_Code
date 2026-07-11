@@ -30,3 +30,45 @@ If the character is not a digit, immediately break the loop (ignore the rest of 
 
 Apply Sign and Clamp: Multiply the final result by the sign. Finally, 
 check if the result exceeds the 32-bit bounds and clamp it if necessary.
+
+
+class Solution:
+    def myAtoi(self, s: str) -> int:
+        # 1. Remove leading whitespace
+        s = s.lstrip()
+        
+        # If string is empty after stripping, return 0
+        if not s:
+            return 0
+        
+        # 2. Initialize variables
+        sign = 1
+        index = 0
+        result = 0
+        
+        # 3. Handle sign
+        if s[index] == '-':
+            sign = -1
+            index += 1
+        elif s[index] == '+':
+            index += 1
+            
+        # 4. Process numerical characters
+        while index < len(s) and s[index].isdigit():
+            # Convert string char to int and add to result
+            result = result * 10 + int(s[index])
+            index += 1
+            
+        # Apply the sign
+        result *= sign
+        
+        # 5. Clamp to 32-bit signed integer range
+        INT_MIN = -2**31
+        INT_MAX = 2**31 - 1
+        
+        if result < INT_MIN:
+            return INT_MIN
+        elif result > INT_MAX:
+            return INT_MAX
+            
+        return result
