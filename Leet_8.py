@@ -25,3 +25,5 @@ If it's a -, record the sign as -1 and advance the index. If it's +, just advanc
 Build the Integer: Iterate through the remaining string character by character.
 
 If the character is a digit, multiply the current result by 10 and add the integer value of the character.
+
+If the character is not a digit, immediately break the loop (ignore the rest of the string).
