@@ -91,3 +91,4 @@ Common Edge Cases Handled:
 "4193 with words": Stops reading at the first space/letter and correctly returns 4193.
 "words and 987": The first non-space character is a letter (w), so the loop never processes digits. 
 Returns 0.
+    "-91283472332": Number gets processed but hits the clamping threshold, returning $-2^{31}$ ($-2147483648$).
