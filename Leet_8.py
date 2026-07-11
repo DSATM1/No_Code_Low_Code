@@ -76,3 +76,7 @@ class Solution:
 
 
 Complexity Analysis
+
+Time Complexity: 
+$\mathcal{O}(N)$ where $N$ is the length of the string. 
+We iterate through the characters of the string at most once.
