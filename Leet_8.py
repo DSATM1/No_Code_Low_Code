@@ -27,3 +27,6 @@ Build the Integer: Iterate through the remaining string character by character.
 If the character is a digit, multiply the current result by 10 and add the integer value of the character.
 
 If the character is not a digit, immediately break the loop (ignore the rest of the string).
+
+Apply Sign and Clamp: Multiply the final result by the sign. Finally, 
+check if the result exceeds the 32-bit bounds and clamp it if necessary.
