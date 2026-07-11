@@ -18,3 +18,6 @@ The best way to solve this is through a sequential string parsing approach
 
 Strip Whitespace: Remove leading spaces to clean up the start of the string. 
 If the string becomes empty, return 0.
+
+Determine the Sign: Check the first character of the cleaned string.
+If it's a -, record the sign as -1 and advance the index. If it's +, just advance the index.
