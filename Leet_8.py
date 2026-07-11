@@ -92,3 +92,4 @@ Common Edge Cases Handled:
 "words and 987": The first non-space character is a letter (w), so the loop never processes digits. 
 Returns 0.
     "-91283472332": Number gets processed but hits the clamping threshold, returning $-2^{31}$ ($-2147483648$).
+"+-12": Evaluates the +, moves to - (which is not a digit), loop breaks, returns 0.
