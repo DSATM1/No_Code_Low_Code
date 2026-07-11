@@ -15,3 +15,6 @@ clamp it so it remains within the range.
 Approach
 The best way to solve this is through a sequential string parsing approach 
 (often called a Deterministic Finite Automaton or simple pointer iteration).
+
+Strip Whitespace: Remove leading spaces to clean up the start of the string. 
+If the string becomes empty, return 0.
