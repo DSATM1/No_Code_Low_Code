@@ -23,3 +23,5 @@ Determine the Sign: Check the first character of the cleaned string.
 If it's a -, record the sign as -1 and advance the index. If it's +, just advance the index.
 
 Build the Integer: Iterate through the remaining string character by character.
+
+If the character is a digit, multiply the current result by 10 and add the integer value of the character.
