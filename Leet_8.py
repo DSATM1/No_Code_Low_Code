@@ -84,3 +84,5 @@ We iterate through the characters of the string at most once.
 
 Space Complexity: $\mathcal{O}(1)$. 
 We are only using a few variables (sign, index, result, and bounds) which require constant extra space.
+
+Common Edge Cases Handled:
