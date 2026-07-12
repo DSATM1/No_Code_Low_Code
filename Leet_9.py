@@ -139,3 +139,11 @@ Example:
 reverse = 12
 digit = 3
 New reverse = 123
+
+
+Step 7: Remove Last Digit
+x //= 10
+Example:
+123
+↓
+12
