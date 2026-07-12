@@ -131,3 +131,11 @@ digit = x % 10
 Example:
 123
 digit = 3
+
+
+Step 6: Build Reversed Number
+reverse = reverse * 10 + digit
+Example:
+reverse = 12
+digit = 3
+New reverse = 123
