@@ -41,3 +41,8 @@ x = 10
 
 Output:
 False
+
+Explanation:
+
+Forward  : 10
+Backward : 01
