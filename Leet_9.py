@@ -147,3 +147,8 @@ Example:
 123
 ↓
 12
+
+
+Step 8: Compare
+return original == reverse
+If they are equal, the number is a palindrome.
