@@ -203,3 +203,14 @@ Original x	Reversed Half
 1221	    0
 122	        1
 12	        12
+
+
+Now:
+x == reversed_half
+12 == 12
+
+Output:
+True
+
+For an odd number like 12321, the middle digit doesn't matter, so we compare:
+x == reversed_half // 10
