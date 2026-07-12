@@ -214,3 +214,13 @@ True
 
 For an odd number like 12321, the middle digit doesn't matter, so we compare:
 x == reversed_half // 10
+
+
+Complexity Analysis
+
+Approach	            Time	Space
+String	                O(d)	O(d)
+Reverse Entire Number	O(d)	O(1)
+Reverse Half (Optimal)	O(d)	O(1)
+
+Here, d is the number of digits.
