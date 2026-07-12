@@ -26,3 +26,8 @@ x = -121
 
 Output:
 False
+
+Explanation:
+
+Forward  : -121
+Backward : 121-
