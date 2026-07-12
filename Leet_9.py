@@ -119,3 +119,8 @@ We'll compare it later with the reversed value.
 
 Step 3: Initialize Reverse
 reverse = 0
+
+
+Step 4: Reverse the Number
+while x > 0:
+Repeat until all digits are processed.
