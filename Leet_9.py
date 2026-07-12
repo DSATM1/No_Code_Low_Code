@@ -124,3 +124,10 @@ reverse = 0
 Step 4: Reverse the Number
 while x > 0:
 Repeat until all digits are processed.
+
+
+Step 5: Extract Last Digit
+digit = x % 10
+Example:
+123
+digit = 3
