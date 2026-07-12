@@ -33,3 +33,11 @@ Forward  : -121
 Backward : 121-
 
 They are not the same.
+
+
+Example 3
+Input:
+x = 10
+
+Output:
+False
