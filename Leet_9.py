@@ -164,3 +164,9 @@ x	digit	reverse
 12	2	    12
 1	1	    121
 0	-	    121
+
+
+Compare:
+121 == 121
+Output:
+True
