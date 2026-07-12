@@ -101,3 +101,13 @@ class Solution:
         return original == reverse
 
 Line-by-Line Explanation
+
+Step 1: Handle Negative Numbers
+if x < 0:
+    return False
+
+Example:
+-121
+Backward:
+121-
+Not the same.
