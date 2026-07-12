@@ -66,3 +66,15 @@ Space Complexity
 O(n)
 
 where n is the number of digits.
+
+Approach 2: Reverse the Integer (Interview Preferred)
+Idea
+
+Reverse the number mathematically and compare it with the original.
+
+Algorithm
+Negative numbers are never palindromes.
+Save the original number.
+Reverse the digits one by one.
+Compare the reversed number with the original.
+Python Code
