@@ -105,9 +105,13 @@ Line-by-Line Explanation
 Step 1: Handle Negative Numbers
 if x < 0:
     return False
-
 Example:
 -121
 Backward:
 121-
 Not the same.
+
+
+Step 2: Save Original Number
+original = x
+We'll compare it later with the reversed value.
