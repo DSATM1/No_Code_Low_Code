@@ -46,3 +46,11 @@ Explanation:
 
 Forward  : 10
 Backward : 01
+
+
+Approach 1: Convert to String (Easy)
+Idea
+
+Convert the number to a string and compare it with its reverse.
+
+Python Code
