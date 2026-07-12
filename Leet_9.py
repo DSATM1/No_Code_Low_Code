@@ -19,3 +19,10 @@ True
 Explanation:
 
 121 → 121
+
+Example 2
+Input:
+x = -121
+
+Output:
+False
