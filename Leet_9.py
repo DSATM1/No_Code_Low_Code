@@ -15,3 +15,7 @@ x = 121
 
 Output:
 True
+
+Explanation:
+
+121 → 121
