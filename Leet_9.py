@@ -115,3 +115,7 @@ Not the same.
 Step 2: Save Original Number
 original = x
 We'll compare it later with the reversed value.
+
+
+Step 3: Initialize Reverse
+reverse = 0
