@@ -197,3 +197,9 @@ class Solution:
             x //= 10
 
         return x == reversed_half or x == reversed_half // 10
+
+Dry Run (x = 1221)
+Original x	Reversed Half
+1221	    0
+122	        1
+12	        12
