@@ -152,3 +152,15 @@ Example:
 Step 8: Compare
 return original == reverse
 If they are equal, the number is a palindrome.
+
+
+Dry Run
+
+Input:
+
+x = 121
+x	digit	reverse
+121	1	    1
+12	2	    12
+1	1	    121
+0	-	    121
