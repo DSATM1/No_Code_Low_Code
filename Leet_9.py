@@ -59,3 +59,10 @@ class Solution:
     def isPalindrome(self, x: int) -> bool:
 
         return str(x) == str(x)[::-1]
+
+Time Complexity
+O(n)
+Space Complexity
+O(n)
+
+where n is the number of digits.
