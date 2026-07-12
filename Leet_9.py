@@ -233,3 +233,12 @@ Extract digits using % 10.
 Remove digits using // 10.
 Reverse digits mathematically.
 Compare values without converting to another data type (optimal approach).
+
+
+This pattern also appears in problems like:
+
+Reverse Integer (#7)
+Plus One
+Add Digits
+Happy Number
+Armstrong Number
