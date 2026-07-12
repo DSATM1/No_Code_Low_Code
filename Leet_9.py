@@ -224,3 +224,12 @@ Reverse Entire Number	O(d)	O(1)
 Reverse Half (Optimal)	O(d)	O(1)
 
 Here, d is the number of digits.
+
+Pattern Used
+
+This problem is based on the Mathematical Digit Manipulation pattern:
+
+Extract digits using % 10.
+Remove digits using // 10.
+Reverse digits mathematically.
+Compare values without converting to another data type (optimal approach).
