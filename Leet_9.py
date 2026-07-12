@@ -170,3 +170,15 @@ Compare:
 121 == 121
 Output:
 True
+
+
+Optimized Approach (Half Reversal)
+
+Instead of reversing the entire number, reverse only half of its digits.
+
+Why?
+Saves unnecessary work.
+Avoids integer overflow concerns in some languages.
+This is the official LeetCode optimal solution.
+
+Python Code
