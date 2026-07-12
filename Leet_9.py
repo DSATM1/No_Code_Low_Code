@@ -54,3 +54,8 @@ Idea
 Convert the number to a string and compare it with its reverse.
 
 Python Code
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+
+        return str(x) == str(x)[::-1]
