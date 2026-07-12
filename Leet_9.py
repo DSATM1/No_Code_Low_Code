@@ -99,3 +99,5 @@ class Solution:
             x //= 10
 
         return original == reverse
+
+Line-by-Line Explanation
