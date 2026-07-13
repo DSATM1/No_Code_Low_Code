@@ -187,3 +187,33 @@ class Solution:
             return first_match and dfs(i + 1, j + 1)
 
         return dfs(0, 0)
+
+
+Time Complexity
+O(2^(m+n))
+
+Very slow because many states are recalculated.
+
+Approach 2: Dynamic Programming (Memoization)
+
+Instead of solving the same subproblem repeatedly, store each result.
+
+Idea
+
+Use:
+
+dp(i, j)
+
+Meaning:
+
+Does
+
+s[i:]
+
+match
+
+p[j:] ?
+
+If already solved, return the stored answer.
+
+Python Code (Optimal)
