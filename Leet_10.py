@@ -391,3 +391,24 @@ Where:
 
 m = len(s)
 n = len(p)
+
+Pattern Used
+
+This problem is a classic Dynamic Programming on Strings problem.
+
+Common techniques involved:
+
+Recursion
+Memoization (Top-Down DP)
+State Definition (dp(i, j))
+Pattern Matching
+Decision Making (Skip vs Use *)
+
+You'll encounter similar DP patterns in problems like:
+
+Wildcard Matching (#44)
+Edit Distance (#72)
+Distinct Subsequences (#115)
+Interleaving String (#97)
+
+This is one of the most important string dynamic programming problems for technical interviews.
