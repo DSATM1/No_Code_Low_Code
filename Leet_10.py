@@ -25,3 +25,20 @@ Pattern: a
 String : aa
 
 Only one 'a' is matched.
+
+
+Example 2
+Input:
+s = "aa"
+p = "a*"
+
+Output:
+True
+
+Explanation:
+
+a* means:
+
+0 or more 'a'
+
+aa ✔
