@@ -124,3 +124,28 @@ Any character
 Any number of times
 
 So it matches almost every string.
+
+
+Why is this Hard?
+
+At every *, there are multiple choices:
+
+Example:
+
+s = "aaa"
+
+p = "a*"
+
+Should * match:
+
+0 a's?
+
+1 a?
+
+2 a's?
+
+3 a's?
+
+We must explore all valid possibilities efficiently.
+
+This is why Dynamic Programming (DP) is used.
