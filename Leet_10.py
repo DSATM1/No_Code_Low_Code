@@ -63,3 +63,12 @@ matches any character
 matches any number of times
 
 So .* matches everything.
+
+
+Example 4
+Input:
+s = "mississippi"
+p = "mis*is*p*."
+
+Output:
+False
