@@ -2,3 +2,11 @@
 LeetCode #10 – Regular Expression Matching
 
 Difficulty: Hard
+Problem Statement
+
+Given an input string s and a pattern p, implement regular expression matching with support for:
+
+. → Matches any single character.
+* → Matches zero or more of the preceding element.
+
+The match must cover the entire string, not just part of it.
