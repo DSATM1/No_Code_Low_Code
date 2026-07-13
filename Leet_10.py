@@ -42,3 +42,24 @@ a* means:
 0 or more 'a'
 
 aa ✔
+
+
+Example 3
+Input:
+s = "ab"
+p = ".*"
+
+Output:
+True
+
+Explanation:
+
+.
+
+matches any character
+
+*
+
+matches any number of times
+
+So .* matches everything.
