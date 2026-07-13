@@ -72,3 +72,55 @@ p = "mis*is*p*."
 
 Output:
 False
+
+
+Understanding the Operators
+Dot (.)
+
+Matches exactly one character.
+
+Examples:
+
+Pattern: a.c
+
+Matches:
+
+abc ✔
+
+axc ✔
+
+a9c ✔
+
+Does not match:
+
+ac
+abbc
+Star (*)
+
+Matches zero or more of the previous character.
+
+Example:
+
+a*
+
+Matches:
+
+""
+
+a
+
+aa
+
+aaa
+
+aaaa
+Dot + Star
+.*
+
+Means:
+
+Any character
+
+Any number of times
+
+So it matches almost every string.
