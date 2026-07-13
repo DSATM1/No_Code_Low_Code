@@ -149,3 +149,14 @@ Should * match:
 We must explore all valid possibilities efficiently.
 
 This is why Dynamic Programming (DP) is used.
+
+Approach 1: Recursion (Brute Force)
+Idea
+
+Compare characters from left to right.
+
+At each *, choose one of two options:
+
+Skip x*.
+Use x* to match one more character.
+Recursive Code
