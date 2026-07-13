@@ -254,4 +254,128 @@ class Solution:
 
             return ans
 
+
+Line-by-Line Explanation
+Memo Dictionary
+memo = {}
+
+Stores already computed states.
+
+Key:
+
+(i, j)
+
+Example:
+
+(3,2)
+
+means:
+
+String starts at index 3
+
+Pattern starts at index 2
+Base Case
+if j == len(p):
+    return i == len(s)
+
+Pattern is finished.
+
+String must also be finished.
+
+Current Characters Match?
+first_match = (
+    i < len(s)
+    and
+    (s[i] == p[j] or p[j] == ".")
+)
+
+Example:
+
+a == a ✔
+
+b == . ✔
+
+b == a ✖
+Star Case
+if j + 1 < len(p) and p[j + 1] == "*":
+
+Pattern:
+
+a*
+
+We have two choices.
+
+Option 1
+
+Skip
+
+dp(i, j + 2)
+
+Ignore
+
+a*
+Option 2
+
+Use one occurrence
+
+first_match and dp(i + 1, j)
+
+Consume one character.
+
+Remain at the same pattern because * can match multiple times.
+
+Normal Character
+ans = first_match and dp(i + 1, j + 1)
+
+Move both pointers forward.
+
+Save Result
+memo[(i, j)] = ans
+
+Avoid recomputation.
+
+Dry Run
+
+Input:
+
+s = "aa"
+
+p = "a*"
+
+Step 1
+
+a matches a
+
+Step 2
+
+* found
+
+Choices:
+
+Skip *
+
+OR
+
+Consume one a
+
+Consume:
+
+a
+↓
+
+a
+
+Consume again:
+
+a
+
+↓
+
+empty
+
+Pattern also finishes.
+
+Answer:
+
+True
         return dp(0, 0)
