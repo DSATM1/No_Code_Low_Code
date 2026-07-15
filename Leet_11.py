@@ -228,3 +228,31 @@ else:
     right -= 1
 
 This gives the only chance to increase the container's height while the width decreases.
+Dry Run
+
+Input:
+
+height = [1,8,6,2,5,4,8,3,7]
+Left	Right	Width	Min Height	Area	Max
+0	Dry Run
+Input:
+
+height = [1,8,6,2,5,4,8,3,7]
+Left	Right	Width	MinHeight	Area	Max
+0	    8	    8	    1	        8	    8
+1	    8	    7	    7	        49	  49
+1	    7	    6	    3	        18	  49
+1	    6	    5	    8	        40	  49
+2	    6	    4	    6	        24	  49
+3	    6	    3	    2	        6	    49
+4	    6	    2	    5	        10	  49
+5	    6	    1	    4	        4	    49
+
+Final answer: 49
+
+Complexity Analysis
+Approach	    Time	  Space
+Brute Force	  O(n²)	  O(1)
+Two Pointers	O(n)	  O(1)
+
+
