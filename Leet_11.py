@@ -174,3 +174,57 @@ class Solution:
                 right -= 1
 
         return maximum
+
+Line-by-Line Explanation
+Step 1: Initialize Pointers
+left = 0
+right = len(height) - 1
+
+Start from both ends of the array.
+
+Step 2: Store Maximum Area
+maximum = 0
+
+This variable keeps track of the best answer found so far.
+
+Step 3: Continue Until Pointers Meet
+while left < right:
+
+Each iteration considers one possible container.
+
+Step 4: Calculate Width
+width = right - left
+
+Example:
+
+left = 1
+right = 8
+
+Width = 7
+Step 5: Find Effective Height
+current_height = min(height[left], height[right])
+
+The shorter line determines how much water can be stored.
+
+Step 6: Calculate Area
+area = width * current_height
+
+Example:
+
+Width = 7
+
+Height = 7
+
+Area = 49
+Step 7: Update Maximum
+maximum = max(maximum, area)
+
+Keep the largest area found.
+
+Step 8: Move the Shorter Line
+if height[left] < height[right]:
+    left += 1
+else:
+    right -= 1
+
+This gives the only chance to increase the container's height while the width decreases.
