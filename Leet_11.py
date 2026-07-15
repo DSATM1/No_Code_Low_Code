@@ -49,3 +49,20 @@ height = [1,1]
 
 Output:
 1
+
+
+Formula
+
+The water stored between two lines is:
+
+Area = Width × Height
+
+Where:
+
+Width = right - left
+
+Height = min(height[left], height[right])
+
+Therefore,
+
+Area = (right - left) × min(height[left], height[right])
