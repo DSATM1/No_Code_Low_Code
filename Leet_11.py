@@ -105,3 +105,17 @@ O(1)
 This solution gets accepted for small inputs but is inefficient for large arrays.
 
 
+Approach 2: Two Pointers (Optimal)
+
+This is the expected interview solution.
+
+Key Idea
+
+Start with the widest possible container:
+
+Left pointer at the beginning.
+Right pointer at the end.
+
+Calculate the area.
+
+Then move the pointer with the smaller height, because moving the taller line cannot increase the area—the shorter line limits the water height.
