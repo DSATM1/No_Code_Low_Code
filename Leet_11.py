@@ -76,3 +76,17 @@ Check every possible pair of lines and calculate the area.
 Keep track of the maximum area.
 
 Python Code
+
+class Solution:
+    def maxArea(self, height):
+
+        maximum = 0
+
+        for i in range(len(height)):
+            for j in range(i + 1, len(height)):
+
+                area = (j - i) * min(height[i], height[j])
+
+                maximum = max(maximum, area)
+
+        return maximum
