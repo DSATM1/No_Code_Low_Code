@@ -256,3 +256,22 @@ Brute Force	  O(n²)	  O(1)
 Two Pointers	O(n)	  O(1)
 
 
+Pattern Used
+
+This problem is a classic Two Pointers problem.
+
+Recognition Clues
+Array input.
+Need to compare values from both ends.
+Want an optimal solution better than O(n²).
+Decision at each step is based on comparing two values.
+Similar Two-Pointer Problems
+LeetCode #15 – 3Sum
+LeetCode #42 – Trapping Rain Water
+LeetCode #125 – Valid Palindrome
+LeetCode #167 – Two Sum II (Sorted Array)
+LeetCode #344 – Reverse String
+
+This is one of the most frequently asked Two Pointer interview problems, 
+so it's worth understanding the reasoning behind why the shorter 
+pointer is moved rather than memorizing the code.
