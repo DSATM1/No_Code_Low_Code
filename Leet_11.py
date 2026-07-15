@@ -119,3 +119,23 @@ Right pointer at the end.
 Calculate the area.
 
 Then move the pointer with the smaller height, because moving the taller line cannot increase the area—the shorter line limits the water height.
+
+Why Move the Smaller Height?
+
+Suppose:
+
+Left Height = 3
+Right Height = 8
+
+Current area:
+
+Width × 3
+
+If we move the taller line (height 8):
+
+Width decreases.
+Limiting height is still 3 (or lower).
+
+So the area cannot improve.
+
+To potentially increase the limiting height, move the shorter line.                                                               
