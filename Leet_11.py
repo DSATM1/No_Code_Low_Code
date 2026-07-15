@@ -41,3 +41,11 @@ Height = min(8, 7) = 7
 Area:
 
 7 × 7 = 49
+
+
+Example 2
+Input:
+height = [1,1]
+
+Output:
+1
