@@ -139,3 +139,12 @@ Limiting height is still 3 (or lower).
 So the area cannot improve.
 
 To potentially increase the limiting height, move the shorter line.                                                               
+
+
+Algorithm
+Place one pointer at the beginning.
+Place another pointer at the end.
+Calculate the current area.
+Update the maximum area.
+Move the pointer with the smaller height.
+Repeat until the pointers meet.
