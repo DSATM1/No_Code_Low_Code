@@ -66,3 +66,13 @@ Height = min(height[left], height[right])
 Therefore,
 
 Area = (right - left) × min(height[left], height[right])
+
+
+Approach 1: Brute Force
+Idea
+
+Check every possible pair of lines and calculate the area.
+
+Keep track of the maximum area.
+
+Python Code
