@@ -90,3 +90,18 @@ class Solution:
                 maximum = max(maximum, area)
 
         return maximum
+
+
+Complexity
+
+Time:
+
+O(n²)
+
+Space:
+
+O(1)
+
+This solution gets accepted for small inputs but is inefficient for large arrays.
+
+
