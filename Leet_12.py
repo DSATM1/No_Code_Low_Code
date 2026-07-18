@@ -102,3 +102,13 @@ values = [
 ]
 
 Notice that the subtractive values (900, 400, 90, etc.) are included explicitly.
+
+
+Algorithm
+Store Roman values from largest to smallest.
+Initialize an empty result string.
+Traverse the list of values.
+While the current value is less than or equal to num:
+Append the Roman symbol.
+Subtract the value from num.
+Return the result.
