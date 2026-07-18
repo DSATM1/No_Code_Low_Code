@@ -31,3 +31,46 @@ Number	Roman
 90	    XC
 400	    CD
 900	    CM
+
+
+
+Example 1
+Input:
+num = 3
+
+Output:
+"III"
+Example 2
+Input:
+num = 58
+
+Output:
+"LVIII"
+
+Explanation:
+
+50 = L
+
+5 = V
+
+3 = III
+
+Answer = LVIII
+Example 3
+Input:
+num = 1994
+
+Output:
+"MCMXCIV"
+
+Explanation:
+
+1000 = M
+
+900 = CM
+
+90 = XC
+
+4 = IV
+
+Answer = MCMXCIV
