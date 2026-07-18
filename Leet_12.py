@@ -201,3 +201,67 @@ Continue until num becomes 0.
 
 Step 7: Return the Result
 return result
+
+
+
+Dry Run
+Input
+num = 1994
+Value	Symbol	Remaining num	Result
+1000	M	    994	            M
+900	    CM	    94	            MCM
+90	    XC	    4	            MCMXC
+4	    IV	    0	            MCMXCIV
+
+Final answer:
+
+MCMXCIV
+Another Example
+
+Input:
+
+num = 3749
+
+Steps:
+
+3749
+
+3000 → MMM
+
+700 → DCC
+
+40 → XL
+
+9 → IX
+
+Result:
+
+MMMDCCXLIX
+Complexity Analysis
+Complexity	Value
+Time	O(1)
+Space	O(1)
+Why O(1)?
+The Roman value table always contains 13 entries.
+The input range is limited to 1–3999.
+Therefore, the algorithm performs a constant amount of work regardless of the input size.
+Pattern Used
+
+This problem uses the Greedy Algorithm pattern.
+
+Why Greedy?
+
+At every step, we make the locally optimal choice:
+
+Pick the largest Roman value that does not exceed the remaining number.
+
+This strategy always leads to the correct Roman numeral because Roman numerals are built from the largest possible symbols first.
+
+Similar Greedy Problems
+LeetCode #13 – Roman to Integer
+LeetCode #45 – Jump Game II
+LeetCode #55 – Jump Game
+LeetCode #134 – Gas Station
+LeetCode #435 – Non-overlapping Intervals
+
+Interview Tip: A good clue that a greedy approach may work is when making the best local choice repeatedly leads to the correct global solution, as it does with Roman numeral conversion.
