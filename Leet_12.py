@@ -144,3 +144,60 @@ class Solution:
                 num -= value
 
         return result
+
+
+
+
+Line-by-Line Explanation
+Step 1: Roman Value Mapping
+values = [
+    (1000, "M"),
+    (900, "CM"),
+    ...
+]
+
+Store all Roman numeral values in descending order.
+
+Step 2: Result String
+result = ""
+
+This string will store the final Roman numeral.
+
+Step 3: Traverse the Values
+for value, symbol in values:
+
+Check each Roman numeral from largest to smallest.
+
+Step 4: Use the Largest Possible Value
+while num >= value:
+
+If the current value fits into num, use it.
+
+Example:
+
+num = 58
+
+58 >= 50 ✔
+
+Append "L" and subtract 50.
+
+Remaining:
+
+8
+Step 5: Append the Symbol
+result += symbol
+
+Example:
+
+Result = "L"
+Step 6: Subtract the Value
+num -= value
+
+Example:
+
+58 - 50 = 8
+
+Continue until num becomes 0.
+
+Step 7: Return the Result
+return result
