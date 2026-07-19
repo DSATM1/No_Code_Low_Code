@@ -229,3 +229,13 @@ Time	    O(n)
 Space	    O(1)
 
 Where n is the length of the Roman numeral string.
+
+
+Pattern Used
+
+This problem uses the Greedy Traversal pattern.
+
+Recognition Clues
+Process the input from left to right.
+Make a decision based on the current and next character.
+Add or subtract according to Roman numeral rules.
