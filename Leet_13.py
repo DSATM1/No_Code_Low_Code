@@ -222,3 +222,10 @@ V	        +5	        55
 I	        +1	        56
 I	        +1	        57
 I	        +1	        58
+
+Complexity Analysis
+Complexity	Value
+Time	    O(n)
+Space	    O(1)
+
+Where n is the length of the Roman numeral string.
