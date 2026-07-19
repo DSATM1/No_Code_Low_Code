@@ -87,3 +87,34 @@ XC = 90
 IV = 4
 
 Total = 1994
+
+
+Approach (Greedy Traversal)
+Key Idea
+
+Traverse the string from left to right.
+
+For each character:
+
+If its value is less than the next character's value, subtract it.
+Otherwise, add it.
+Roman Value Dictionary
+roman = {
+    "I": 1,
+    "V": 5,
+    "X": 10,
+    "L": 50,
+    "C": 100,
+    "D": 500,
+    "M": 1000
+}
+Algorithm
+Create a dictionary of Roman values.
+Initialize total = 0.
+Traverse the string.
+If the current value is less than the next value:
+Subtract it.
+Otherwise:
+Add it.
+Return the total.
+Python Code
