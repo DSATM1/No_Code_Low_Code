@@ -196,3 +196,29 @@ return total
 Dry Run
 Input
 s = "MCMXCIV"
+
+
+Character	Value	Next Value	Operation	Total
+M	        1000	100	        +1000	    1000
+C	        100	    1000	    -100	    900
+M	        1000	10	        +1000	    1900
+X	        10	    100	        -10	        1890
+C	        100	    1	        +100	    1990
+I	        1	    5	        -1	        1989
+V	        5	    —	        +5	        1994
+
+Final answer:
+
+1994
+Another Example
+Input
+s = "LVIII"
+
+Steps:
+
+Character	Operation	Total
+L	        +50	        50
+V	        +5	        55
+I	        +1	        56
+I	        +1	        57
+I	        +1	        58
