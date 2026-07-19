@@ -143,3 +143,56 @@ class Solution:
                 total += roman[s[i]]
 
         return total
+
+
+Line-by-Line Explanation
+Step 1: Create Dictionary
+roman = {
+    "I":1,
+    "V":5,
+    "X":10,
+    "L":50,
+    "C":100,
+    "D":500,
+    "M":1000
+}
+
+This allows quick lookup of each Roman numeral's value.
+
+Step 2: Initialize Total
+total = 0
+
+This variable stores the final integer.
+
+Step 3: Traverse the String
+for i in range(len(s)):
+
+Process each Roman numeral character.
+
+Step 4: Check for Subtraction
+if i < len(s) - 1 and roman[s[i]] < roman[s[i + 1]]:
+
+Example:
+
+IV
+
+1 < 5
+
+Subtract 1.
+
+Step 5: Add Otherwise
+else:
+    total += roman[s[i]]
+
+Example:
+
+VI
+
+5 > 1
+
+Add both.
+Step 6: Return Result
+return total
+Dry Run
+Input
+s = "MCMXCIV"
