@@ -118,3 +118,6 @@ if prefix == "":
     return ""
 
 If nothing matches, return an empty string.
+
+Step 6: Return Result
+return prefix
