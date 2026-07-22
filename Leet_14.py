@@ -48,3 +48,22 @@ While the current string doesn't start with the prefix:
 Remove the last character from the prefix.
 If the prefix becomes empty, return "".
 Return the final prefix.
+
+Python Code
+class Solution:
+    def longestCommonPrefix(self, strs):
+        
+        if not strs:
+            return ""
+
+        prefix = strs[0]
+
+        for s in strs[1:]:
+
+            while not s.startswith(prefix):
+                prefix = prefix[:-1]
+
+                if prefix == "":
+                    return ""
+
+        return prefix
