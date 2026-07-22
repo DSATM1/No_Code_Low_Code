@@ -121,3 +121,18 @@ If nothing matches, return an empty string.
 
 Step 6: Return Result
 return prefix
+
+Dry Run
+
+Input:
+
+strs = ["flower","flow","flight"]
+
+Current String	Prefix Before	Prefix After
+flower	        flower	        flower
+flow	        flower	        flow
+flight	        flow	        fl
+
+Output:
+
+fl
