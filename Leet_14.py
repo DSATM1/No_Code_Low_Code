@@ -175,3 +175,17 @@ class Solution:
                     return strs[0][:i]
 
         return strs[0]
+
+Dry Run (Vertical Scanning)
+
+Input:
+
+["flower","flow","flight"]
+Index	Characters	Match?
+0	    f, f, f	    ✅
+1	    l, l, l	    ✅
+2	    o, o, i	    ❌
+
+Return:
+
+"fl"
