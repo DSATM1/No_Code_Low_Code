@@ -34,3 +34,9 @@ Output:
 Explanation:
 
 There is no common prefix.
+
+Approach 1: Horizontal Scanning (Interview Preferred)
+Idea
+Assume the first string is the common prefix.
+Compare it with every other string.
+Shorten the prefix until it matches.
