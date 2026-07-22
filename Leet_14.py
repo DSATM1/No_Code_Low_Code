@@ -67,3 +67,11 @@ class Solution:
                     return ""
 
         return prefix
+
+
+Line-by-Line Explanation
+Step 1: Handle Empty List
+if not strs:
+    return ""
+
+If the input list is empty, there is no common prefix.
