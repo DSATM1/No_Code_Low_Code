@@ -199,3 +199,18 @@ m = length of the shortest string
 Approach	            Time	    Space
 Horizontal Scanning	    O(n × m)	O(1)
 Vertical Scanning	    O(n × m)	O(1)
+
+
+Pattern Used
+
+This problem uses the String Traversal pattern.
+
+Recognition Clues
+Multiple strings are given.
+Need to compare prefixes.
+Stop when the first mismatch is found.
+Similar Problems
+LeetCode #28 – Find the Index of the First Occurrence in a String
+LeetCode #58 – Length of Last Word
+LeetCode #125 – Valid Palindrome
+LeetCode #151 – Reverse Words in a String
