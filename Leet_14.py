@@ -75,3 +75,13 @@ if not strs:
     return ""
 
 If the input list is empty, there is no common prefix.
+
+
+Step 2: Assume First String as Prefix
+prefix = strs[0]
+
+Example:
+
+["flower","flow","flight"]
+
+prefix = "flower"
