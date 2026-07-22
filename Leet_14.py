@@ -85,3 +85,11 @@ Example:
 ["flower","flow","flight"]
 
 prefix = "flower"
+
+Step 3: Compare with Remaining Strings
+for s in strs[1:]:
+
+Compare "flower" with:
+
+"flow"
+"flight"
