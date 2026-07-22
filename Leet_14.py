@@ -93,3 +93,22 @@ Compare "flower" with:
 
 "flow"
 "flight"
+
+Step 4: Shorten Prefix
+while not s.startswith(prefix):
+
+If the current string doesn't start with the prefix, remove the last character.
+
+Example:
+
+prefix = "flower"
+
+flow
+
+Shorten:
+
+flower
+flowe
+flow
+
+Now "flow".startswith("flow") is True.
