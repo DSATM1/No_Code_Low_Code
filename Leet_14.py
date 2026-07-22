@@ -23,3 +23,14 @@ flight
 Common prefix:
 
 fl
+
+Example 2
+Input:
+strs = ["dog","racecar","car"]
+
+Output:
+""
+
+Explanation:
+
+There is no common prefix.
