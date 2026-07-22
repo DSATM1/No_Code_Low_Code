@@ -189,3 +189,13 @@ Index	Characters	Match?
 Return:
 
 "fl"
+
+Complexity Analysis
+
+Let:
+
+n = number of strings
+m = length of the shortest string
+Approach	            Time	    Space
+Horizontal Scanning	    O(n × m)	O(1)
+Vertical Scanning	    O(n × m)	O(1)
