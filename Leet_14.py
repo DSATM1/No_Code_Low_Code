@@ -136,3 +136,23 @@ flight	        flow	        fl
 Output:
 
 fl
+
+
+Approach 2: Vertical Scanning
+Idea
+
+Compare characters column by column.
+
+Example:
+
+flower
+flow
+flight
+
+Compare:
+
+f ✔
+l ✔
+o ✖
+
+Stop at the first mismatch.
