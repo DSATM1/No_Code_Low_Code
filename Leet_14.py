@@ -112,3 +112,9 @@ flowe
 flow
 
 Now "flow".startswith("flow") is True.
+
+Step 5: Return Empty if Needed
+if prefix == "":
+    return ""
+
+If nothing matches, return an empty string.
