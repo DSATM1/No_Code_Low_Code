@@ -156,3 +156,63 @@ class Solution:
                     right -= 1
 
         return result
+
+
+Line-by-Line Explanation
+Step 1: Sort
+nums.sort()
+
+Example:
+
+[-1,0,1,2,-1,-4]
+
+↓
+
+[-4,-1,-1,0,1,2]
+Step 2: Traverse
+for i in range(n - 2):
+
+Fix one number.
+
+Step 3: Skip Duplicate First Elements
+if i > 0 and nums[i] == nums[i - 1]:
+    continue
+
+Avoid generating duplicate triplets.
+
+Step 4: Two Pointers
+left = i + 1
+right = n - 1
+
+Search for the remaining two numbers.
+
+Step 5: Calculate Sum
+total = nums[i] + nums[left] + nums[right]
+Step 6: Found Triplet
+if total == 0:
+
+Save the triplet.
+
+Step 7: Skip Duplicate Left Values
+while left < right and nums[left] == nums[left + 1]:
+    left += 1
+Step 8: Skip Duplicate Right Values
+while left < right and nums[right] == nums[right - 1]:
+    right -= 1
+Step 9: Move Both Pointers
+left += 1
+right -= 1
+
+Continue searching.
+
+Step 10: Sum Too Small
+elif total < 0:
+    left += 1
+
+Need a larger sum.
+
+Step 11: Sum Too Large
+else:
+    right -= 1
+
+Need a smaller sum.
