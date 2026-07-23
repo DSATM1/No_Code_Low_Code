@@ -65,3 +65,37 @@ Time	Space
 O(n³)	O(n)
 
 Too slow for large inputs.
+
+Approach 2: Sorting + Two Pointers (Optimal)
+
+This is the standard interview solution.
+
+Key Idea
+Sort the array.
+Fix one element.
+Use two pointers to find the remaining two numbers whose sum equals -nums[i].
+Why Sort?
+
+Sorting helps:
+
+Use two pointers efficiently.
+Skip duplicate values easily.
+Visualization
+
+Input:
+
+[-1,0,1,2,-1,-4]
+
+After sorting:
+
+[-4,-1,-1,0,1,2]
+
+Fix:
+
+i = -1
+
+Need:
+
+left + right = 1
+
+Move pointers until the sum is found.
