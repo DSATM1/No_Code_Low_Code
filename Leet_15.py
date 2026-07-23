@@ -99,3 +99,60 @@ Need:
 left + right = 1
 
 Move pointers until the sum is found.
+
+Algorithm
+Sort the array.
+Traverse each element as the first number.
+Skip duplicate first elements.
+Set:
+left = i + 1
+right = n - 1
+Calculate:
+total = nums[i] + nums[left] + nums[right]
+If:
+total == 0 → Save triplet.
+total < 0 → Move left.
+total > 0 → Move right.
+Skip duplicate values for left and right.
+Python Code
+class Solution:
+    def threeSum(self, nums):
+
+        nums.sort()
+
+        result = []
+
+        n = len(nums)
+
+        for i in range(n - 2):
+
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+
+            left = i + 1
+            right = n - 1
+
+            while left < right:
+
+                total = nums[i] + nums[left] + nums[right]
+
+                if total == 0:
+
+                    result.append([nums[i], nums[left], nums[right]])
+
+                    while left < right and nums[left] == nums[left + 1]:
+                        left += 1
+
+                    while left < right and nums[right] == nums[right - 1]:
+                        right -= 1
+
+                    left += 1
+                    right -= 1
+
+                elif total < 0:
+                    left += 1
+
+                else:
+                    right -= 1
+
+        return result
