@@ -216,3 +216,41 @@ else:
     right -= 1
 
 Need a smaller sum.
+Dry Run
+
+Input:
+
+nums = [-1,0,1,2,-1,-4]
+
+Sorted:
+
+[-4,-1,-1,0,1,2]
+i	Left	Right	Sum    	Action
+-4	-1	    2	    -3	    Move left
+-1	-1	    2	    0	    Save [-1,-1,2]
+-1	0	    1	    0	    Save [-1,0,1]
+
+Output:
+
+[
+ [-1,-1,2],
+ [-1,0,1]
+]
+Complexity Analysis
+Approach	            Time	    Space
+Brute Force	            O(n³)	    O(n)
+Sorting + Two Pointers	O(n²)	    O(1) (excluding output storage)
+Pattern Used
+
+This problem is a classic Sorting + Two Pointers problem.
+
+Recognition Clues
+Find pairs or triplets with a target sum.
+Duplicate values must be handled.
+Sorting simplifies searching and duplicate removal.
+Similar Problems
+LeetCode #1 – Two Sum
+LeetCode #16 – 3Sum Closest
+LeetCode #18 – 4Sum
+LeetCode #167 – Two Sum II
+LeetCode #11 – Container With Most Water
