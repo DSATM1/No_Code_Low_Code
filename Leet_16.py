@@ -14,3 +14,28 @@ Given an integer array nums of length n and an integer target, find three intege
 Return the sum of the three integers.
 
 You may assume that each input has exactly one solution.
+Example 1
+Input:
+nums = [-1,2,1,-4]
+target = 1
+
+Output:
+2
+
+Explanation:
+
+Triplets:
+
+(-1,2,1) = 2
+(-4,2,1) = -1
+(-4,-1,2) = -3
+(-4,-1,1) = -4
+
+Closest to target (1) is 2.
+Example 2
+Input:
+nums = [0,0,0]
+target = 1
+
+Output:
+0
