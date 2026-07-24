@@ -206,3 +206,19 @@ Complexity Analysis
 Approach	            Time	Space
 Brute Force	            O(n³)	O(1)
 Sorting + Two Pointers	O(n²)	O(1)
+
+
+Pattern Used
+
+This problem uses the Sorting + Two Pointers pattern.
+
+Recognition Clues
+Need three numbers.
+Optimize from O(n³) to O(n²).
+Array can be sorted.
+Use left and right pointers after fixing one element.
+Similar Problems
+LeetCode #15 – 3Sum
+LeetCode #18 – 4Sum
+LeetCode #167 – Two Sum II
+LeetCode #11 – Container With Most Water
