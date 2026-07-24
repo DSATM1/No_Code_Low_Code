@@ -39,3 +39,36 @@ target = 1
 
 Output:
 0
+
+
+Approach 1: Brute Force
+Idea
+
+Check every possible triplet.
+
+Compute the difference between its sum and the target.
+
+Keep the sum with the smallest difference.
+
+Python Code
+class Solution:
+    def threeSumClosest(self, nums, target):
+
+        n = len(nums)
+        closest = nums[0] + nums[1] + nums[2]
+
+        for i in range(n):
+            for j in range(i + 1, n):
+                for k in range(j + 1, n):
+
+                    total = nums[i] + nums[j] + nums[k]
+
+                    if abs(total - target) < abs(closest - target):
+                        closest = total
+
+        return closest
+Complexity
+Time	Space
+O(n³)	O(1)
+
+Too slow for large inputs.
