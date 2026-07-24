@@ -83,3 +83,18 @@ Fix one element.
 Use two pointers to find the closest sum.
 
 Unlike 3Sum (#15), we do not need to skip duplicate triplets, because we only return the closest sum.
+
+Algorithm
+Sort the array.
+Initialize the closest sum using the first three elements.
+Traverse the array.
+Fix one element.
+Use two pointers:
+left = i + 1
+right = n - 1
+Calculate the current sum.
+Update the closest sum if needed.
+If:
+Sum < target → move left.
+Sum > target → move right.
+Sum == target → return immediately.
