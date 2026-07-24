@@ -72,3 +72,14 @@ Time	Space
 O(n³)	O(1)
 
 Too slow for large inputs.
+
+Approach 2: Sorting + Two Pointers (Optimal)
+
+This is the expected interview solution.
+
+Key Idea
+Sort the array.
+Fix one element.
+Use two pointers to find the closest sum.
+
+Unlike 3Sum (#15), we do not need to skip duplicate triplets, because we only return the closest sum.
