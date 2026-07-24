@@ -180,3 +180,24 @@ else:
     return total
 
 Exact match found.
+
+Dry Run
+Input
+nums = [-1,2,1,-4]
+target = 1
+
+Sorted:
+
+[-4,-1,1,2]
+
+Initial:
+
+closest = -4
+i	Left	Right	Sum	    Closest
+-4	-1	    2	    -3	    -3
+-4	1	    2	    -1	    -1
+-1	1	    2	    2	    2
+
+Output:
+
+2
