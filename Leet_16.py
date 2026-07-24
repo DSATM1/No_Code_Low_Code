@@ -131,3 +131,52 @@ class Solution:
                     return total
 
         return closest
+
+
+Line-by-Line Explanation
+Step 1: Sort the Array
+nums.sort()
+
+Example:
+
+[-1,2,1,-4]
+
+↓
+
+[-4,-1,1,2]
+Step 2: Initialize Closest
+closest = nums[0] + nums[1] + nums[2]
+
+This gives an initial candidate.
+
+Step 3: Traverse
+for i in range(n - 2):
+
+Fix one element.
+
+Step 4: Two Pointers
+left = i + 1
+right = n - 1
+Step 5: Calculate Sum
+total = nums[i] + nums[left] + nums[right]
+Step 6: Update Closest
+if abs(total - target) < abs(closest - target):
+    closest = total
+
+Choose the sum with the smallest absolute difference.
+
+Step 7: Move Pointers
+if total < target:
+    left += 1
+
+Need a larger sum.
+
+elif total > target:
+    right -= 1
+
+Need a smaller sum.
+
+else:
+    return total
+
+Exact match found.
