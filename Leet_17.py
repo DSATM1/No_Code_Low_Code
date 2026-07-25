@@ -261,3 +261,20 @@ Time	      O(4ⁿ × n)
 Space	      O(n) (excluding the output list)
 
 The × n factor comes from building strings of length n.
+
+
+Pattern Used
+
+This problem is a classic Backtracking problem.
+
+Recognition Clues
+Generate all possible combinations.
+Make one choice at a time.
+Undo the choice and explore the next option.
+Explore a decision tree recursively.
+Similar Problems
+LeetCode #22 – Generate Parentheses
+LeetCode #39 – Combination Sum
+LeetCode #46 – Permutations
+LeetCode #77 – Combinations
+LeetCode #78 – Subsets
