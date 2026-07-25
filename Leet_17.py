@@ -212,3 +212,39 @@ ad
 ↓
 
 Store "ad"
+
+
+Dry Run
+
+Input:
+
+digits = "23"
+
+Tree:
+
+           ""
+        /   |   \
+       a    b    c
+     / | \ /|\  /|\
+    d e f d e f d e f
+
+Generated combinations:
+
+Combination
+ad
+ae
+af
+bd
+be
+bf
+cd
+ce
+cf
+
+Output:
+
+[
+"ad","ae","af",
+"bd","be","bf",
+"cd","ce","cf"
+]
