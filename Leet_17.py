@@ -138,3 +138,77 @@ class Solution:
         backtrack(0, "")
 
         return result
+
+
+Line-by-Line Explanation
+Step 1: Empty Input
+if not digits:
+    return []
+
+Example:
+
+digits = ""
+
+Answer = []
+Step 2: Phone Mapping
+phone = {
+    "2":"abc",
+    "3":"def",
+    ...
+}
+
+This dictionary tells us which letters belong to each digit.
+
+Step 3: Result List
+result = []
+
+Stores all valid combinations.
+
+Step 4: Backtracking Function
+def backtrack(index, path):
+
+Parameters:
+
+index → Current digit being processed.
+path → Current letter combination.
+Step 5: Base Case
+if index == len(digits):
+    result.append(path)
+    return
+
+If all digits are processed, store the completed combination.
+
+Step 6: Get Letters
+letters = phone[digits[index]]
+
+Example:
+
+digits[index] = "2"
+
+letters = "abc"
+Step 7: Try Every Letter
+for letter in letters:
+
+For "abc":
+
+a
+b
+c
+Step 8: Recursive Call
+backtrack(index + 1, path + letter)
+
+Example:
+
+path = ""
+
+↓
+
+a
+
+↓
+
+ad
+
+↓
+
+Store "ad"
