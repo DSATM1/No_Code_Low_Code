@@ -92,3 +92,15 @@ bf
 cd
 ce
 cf
+
+Algorithm
+If the input is empty, return [].
+Create the phone mapping.
+Use a recursive backtracking function.
+For each letter of the current digit:
+Add it to the current combination.
+Recurse for the next digit.
+Remove the letter (backtrack).
+Store complete combinations.
+
+  
