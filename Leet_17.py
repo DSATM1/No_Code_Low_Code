@@ -44,3 +44,17 @@ digits = "2"
 
 Output:
 ["a","b","c"]
+
+
+Approach: Backtracking (Optimal)
+Key Idea
+
+Each digit has multiple possible letters.
+
+For every digit:
+
+Choose one letter.
+Move to the next digit.
+Continue until all digits are processed.
+
+This forms a decision tree.
