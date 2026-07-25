@@ -248,3 +248,16 @@ Output:
 "bd","be","bf",
 "cd","ce","cf"
 ]
+
+
+Complexity Analysis
+
+Let:
+
+n = number of digits.
+Each digit has up to 4 letters (7 and 9).
+Complexity	Value
+Time	      O(4ⁿ × n)
+Space	      O(n) (excluding the output list)
+
+The × n factor comes from building strings of length n.
