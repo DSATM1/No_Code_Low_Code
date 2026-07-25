@@ -58,3 +58,37 @@ Move to the next digit.
 Continue until all digits are processed.
 
 This forms a decision tree.
+
+
+Visualization
+
+Input:
+
+digits = "23"
+
+Phone mapping:
+
+2 → abc
+
+3 → def
+
+Decision Tree:
+
+                ""
+          /      |      \
+         a       b       c
+      /  |  \  / | \   / | \
+     d   e  f d e f  d e f
+
+
+Possible combinations:
+
+ad
+ae
+af
+bd
+be
+bf
+cd
+ce
+cf
