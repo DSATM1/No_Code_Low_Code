@@ -170,3 +170,83 @@ class Solution:
                         right -= 1
 
         return result
+
+Line-by-Line Explanation
+Step 1: Sort the Array
+nums.sort()
+
+Example:
+
+[1,0,-1,0,-2,2]
+
+↓
+
+[-2,-1,0,0,1,2]
+
+Sorting helps:
+
+Apply two pointers.
+Skip duplicates easily.
+Step 2: Fix First Number
+for i in range(n - 3):
+
+Choose the first element.
+
+Step 3: Skip Duplicate First Numbers
+if i > 0 and nums[i] == nums[i - 1]:
+    continue
+
+Avoid duplicate quadruplets.
+
+Step 4: Fix Second Number
+for j in range(i + 1, n - 2):
+
+Choose the second element.
+
+Step 5: Skip Duplicate Second Numbers
+if j > i + 1 and nums[j] == nums[j - 1]:
+    continue
+
+Again, avoid duplicates.
+
+Step 6: Initialize Two Pointers
+left = j + 1
+right = n - 1
+
+Search for the remaining two numbers.
+
+Step 7: Calculate Sum
+total = nums[i] + nums[j] + nums[left] + nums[right]
+Step 8: Found a Quadruplet
+if total == target:
+
+Save it:
+
+result.append([
+    nums[i],
+    nums[j],
+    nums[left],
+    nums[right]
+])
+Step 9: Skip Duplicate Left/Right Values
+while left < right and nums[left] == nums[left + 1]:
+    left += 1
+
+while left < right and nums[right] == nums[right - 1]:
+    right -= 1
+Step 10: Move Pointers
+left += 1
+right -= 1
+
+Continue searching.
+
+Step 11: Adjust Based on Sum
+elif total < target:
+    left += 1
+
+Need a larger sum.
+
+else:
+    right -= 1
+
+Need a smaller sum.
