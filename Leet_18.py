@@ -277,3 +277,20 @@ Complexity Analysis
 Approach	            Time	Space
 Brute Force	            O(n⁴)	O(n)
 Sorting + Two Pointers	O(n³)	O(1) (excluding output storage)
+
+
+Pattern Used
+
+This problem uses the Sorting + Two Pointers pattern.
+
+Recognition Clues
+Need to find k numbers whose sum equals a target.
+Sorting enables efficient searching.
+Use fixed elements plus two pointers.
+Skip duplicates to avoid repeated results.
+Similar Problems
+LeetCode #1 – Two Sum
+LeetCode #15 – 3Sum
+LeetCode #16 – 3Sum Closest
+LeetCode #167 – Two Sum II
+LeetCode #259 – 3Sum Smaller
