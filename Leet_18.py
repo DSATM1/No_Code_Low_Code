@@ -250,3 +250,30 @@ else:
     right -= 1
 
 Need a smaller sum.
+
+Dry Run
+Input
+nums = [1,0,-1,0,-2,2]
+target = 0
+
+Sorted:
+
+[-2,-1,0,0,1,2]
+i	j	Left	Right	Sum	    Action
+-2	-1	0	    2	    -1	    Move left
+-2	-1	1	    2	    0	    Save [-2,-1,1,2]
+-2	0	0	    2	    0	    Save [-2,0,0,2]
+-1	0	0	    1	    0	    Save [-1,0,0,1]
+
+Output:
+
+[
+[-2,-1,1,2],
+[-2,0,0,2],
+[-1,0,0,1]
+]
+
+Complexity Analysis
+Approach	            Time	Space
+Brute Force	            O(n⁴)	O(n)
+Sorting + Two Pointers	O(n³)	O(1) (excluding output storage)
