@@ -103,3 +103,19 @@ Need:
 left + right = 3
 
 Use two pointers to search.
+
+Algorithm
+Sort the array.
+Loop through the first element (i).
+Skip duplicate values for i.
+Loop through the second element (j).
+Skip duplicate values for j.
+Set:
+left = j + 1
+right = n - 1
+Calculate the sum.
+If:
+Sum == target → Save quadruplet.
+Sum < target → Move left.
+Sum > target → Move right.
+Skip duplicate values for left and right.
