@@ -33,3 +33,31 @@ Output:
 [
 [2,2,2,2]
 ]
+
+
+Approach 1: Brute Force
+Idea
+
+Check every possible group of four numbers.
+
+If their sum equals the target, store the quadruplet.
+
+Use a set to remove duplicates.
+
+Python Code
+class Solution:
+    def fourSum(self, nums, target):
+
+        nums.sort()
+        n = len(nums)
+        result = set()
+
+        for i in range(n):
+            for j in range(i + 1, n):
+                for k in range(j + 1, n):
+                    for l in range(k + 1, n):
+
+                        if nums[i] + nums[j] + nums[k] + nums[l] == target:
+                            result.add((nums[i], nums[j], nums[k], nums[l]))
+
+        return [list(x) for x in result]
