@@ -61,3 +61,23 @@ class Solution:
                             result.add((nums[i], nums[j], nums[k], nums[l]))
 
         return [list(x) for x in result]
+
+
+Complexity
+Time	Space
+O(n⁴)	O(n)
+
+Too slow for large inputs.
+
+Approach 2: Sorting + Two Pointers (Optimal)
+
+This is the expected interview solution.
+
+Key Idea
+
+This is an extension of 3Sum.
+
+Sort the array.
+Fix the first number (i).
+Fix the second number (j).
+Use two pointers (left, right) to find the remaining two numbers.
